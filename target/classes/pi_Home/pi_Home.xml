@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite parallel="false" name="Pi-Project">
+  <test name="LabelVerification">
+    <classes>
+      <class name="pi_Home.LabelVerification"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test name="EmployeeSearch">
+    <classes>
+      <class name="pi_Home.EmployeeSearch"/>
+    </classes>
+  </test> 
+</suite>

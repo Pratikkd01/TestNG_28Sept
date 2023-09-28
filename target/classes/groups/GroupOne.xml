@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite parallel="false" name="RegressionSuite">
+
+  <test name="GrouopDemo">
+	  <groups>
+		  <run>
+			  <include name ="Smoke"/>
+			  <exclude name ="Funct"/>
+		  </run>
+	  </groups>
+    <classes>
+      <class name="groups.GroupOne"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

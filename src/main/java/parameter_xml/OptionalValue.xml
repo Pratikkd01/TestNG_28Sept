@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="OptionalTestSuite">
+  <test name="Optional Test One">
+    <classes>
+      <class name="parameter_xml.OptionalValue"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Optional Test Two">
+	  <parameter name="optional-value" value="Pratik passed from xml"/>
+    <classes>
+      <class name="parameter_xml.OptionalValue"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

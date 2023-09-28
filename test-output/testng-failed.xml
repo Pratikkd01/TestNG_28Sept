@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Pi-Project]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="LabelVerification(failed)">
+    <classes>
+      <class name="pi_Home.LabelVerification">
+        <methods>
+          <include name="MyWork"/>
+          <include name="Home"/>
+          <include name="OnePersistent"/>
+          <include name="lunchbrowser"/>
+        </methods>
+      </class> <!-- pi_Home.LabelVerification -->
+    </classes>
+  </test> <!-- LabelVerification(failed) -->
+  <test thread-count="5" name="EmployeeSearch(failed)">
+    <classes>
+      <class name="pi_Home.EmployeeSearch">
+        <methods>
+          <include name="MyWork"/>
+          <include name="Home"/>
+          <include name="searchName" invocation-numbers="0"/>
+          <include name="OnePersistent"/>
+          <include name="lunchbrowser"/>
+        </methods>
+      </class> <!-- pi_Home.EmployeeSearch -->
+    </classes>
+  </test> <!-- EmployeeSearch(failed) -->
+</suite> <!-- Failed suite [Pi-Project] -->

@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite parallel="false" name="ListenerSuite">
+	<listeners>
+		<listener class-name="customReport.MyListener"></listener>
+	</listeners>
+  <test name="Test">
+    <classes>
+      <class name="customReport.IReportDemo"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

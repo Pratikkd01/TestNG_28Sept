@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite parallel="false" name="SmokeSuite">
+ <test name="Include_Exclude Methods">
+  <classes>
+      <class name="com.testNG.TwoTestExecution">
+      <methods>
+		  <include name ="SerachTest001()"/>
+		  <exclude name ="SerachTest002()"/>
+	  </methods>
+	  </class>
+</classes>
+  </test> <!-- Test -->
+  
+<test name="Testone">
+ <classes>
+	<class name="com.testNG.Testone">
+      <methods>
+		  <exclude name ="searchApple()"/>
+	  </methods>
+	  </class>
+ </classes>  
+    </test> 
+</suite> 
